@@ -2,7 +2,9 @@
 # coding: utf-8
 
 # In[ ]:
-
+from pyspark.sql import SparkSession
+spark = SparkSession.builder.master("local").appName("Demo1").getOrCreate()
+spark
 
 xmldf1 = spark.read.format("com.databricks.spark.xml")        .option("rowTag","record").option("rootTag", "records")        .load("/home/sandip/Downloads/dataJan-16-2019.xml")
 

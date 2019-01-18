@@ -1,0 +1,8 @@
+[dev]
+appName=sample2
+executionMode = local
+sourceFile = /usr/local/spark-2.4.0-bin-hadoop2.7/examples/src/main/resources/people.csv
+
+[prod]
+appName=sample2
+sourceFile = /home/sandip/Downloads/dataJan-18-2019(1).csv

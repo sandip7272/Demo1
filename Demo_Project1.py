@@ -11,5 +11,6 @@ csvDF = spark.read.format("csv").option("header","true").option("inferSchema","t
 
 countRecordDF = csvDF.count()
 
+
 print (countRecordDF)
 
